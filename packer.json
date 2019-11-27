@@ -20,5 +20,11 @@
     "instance_type": "m3.medium",
     "ssh_username": "centos",
     "ami_name": "k8s-Image {{timestamp}}"
-  }]
+  }],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "script.sh"
+    }
+  ]
 }
